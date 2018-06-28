@@ -1,0 +1,49 @@
+$mdc-theme-primary: #0079FF;
+$mdc-theme-secondary: #ff0077;
+$mdc-theme-on-primary: #ffffff;
+$mdc-theme-on-secondary: #ffffff;
+
+
+
+
+@import "@material/button/mdc-button";
+@import "@material/textfield/mdc-text-field";
+@import "@material/textfield/icon/mdc-text-field-icon";
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+.foo-button {
+  @include mdc-button-ink-color(teal);
+  @include mdc-states(teal);
+}
+
+body {
+    margin: 0;
+    // background-color: $mdc-theme-primary;
+}
+
+.search-wrapper {
+    grid-row: 2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.search-box {
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.mdc-top-app-bar {
+    grid-row: 1;
+}
+
+img {
+    height: 50px;
+    width: auto;
+}
